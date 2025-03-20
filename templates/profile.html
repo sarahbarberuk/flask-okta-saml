@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>User Profile</title></head>
+<body>
+    <h1>Welcome, {{ name_id }}</h1>
+    <h2>Attributes:</h2>
+    <ul>
+        {% for key, value in user.items() %}
+            <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/logout">Logout</a>
+</body>
+</html>
